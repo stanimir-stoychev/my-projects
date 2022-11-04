@@ -4,12 +4,15 @@
     "private": true,
     "scripts": {
         "dev": "next dev --turbo",
+        "dev:server": "ts-node --project tsconfig.server.json server/index.ts",
         "build": "next build",
         "start": "next start",
         "lint": "next lint"
     },
     "dependencies": {
         "@prisma/client": "4.5.0",
+        "@swc/core": "^1.3.14",
+        "@swc/helpers": "^0.4.12",
         "@types/node": "18.11.9",
         "@types/react": "18.0.25",
         "@types/react-dom": "18.0.8",
@@ -20,6 +23,8 @@
         "prisma": "^4.5.0",
         "react": "18.2.0",
         "react-dom": "18.2.0",
+        "regenerator-runtime": "^0.13.10",
+        "ts-node": "^10.9.1",
         "typescript": "4.8.4"
     }
 }

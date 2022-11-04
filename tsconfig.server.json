@@ -1,0 +1,14 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "exclude": ["node_modules"],
+    "ts-node": {
+        "swc": true
+    },
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/server/*": ["server/*"],
+            "@/src/*": ["src/*"]
+        }
+    }
+}

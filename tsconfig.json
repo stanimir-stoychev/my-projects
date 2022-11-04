@@ -16,6 +16,7 @@
         "incremental": true,
         "baseUrl": ".",
         "paths": {
+            "@/server/*": ["server/*"],
             "@/src/*": ["src/*"],
             "@/static/*": ["public/static/*"],
             "@/styles/*": ["styles/*"]
